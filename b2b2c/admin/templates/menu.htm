@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="pic/98ecs.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="pic/jquery1.42.min.js"></script>
+<script type="text/javascript" src="pic/jquery.SuperSlide.2.1.1.js"></script>
+  
+</head>
+<body  style=" background:url(pic/lbg.jpg) left repeat-y;">
+
+
+<div class="leftmenu">
+<div class="hd"><ul> 
+{foreach from=$menus item=menu key=k name=foo} 
+<li><img src="pic/{$k}.png">{$menu.label}</li>{/foreach}</ul></div>
+<div class="bd">
+{foreach from=$menus item=menu key=k name=foo}
+<ul>
+{foreach from=$menu.children item=child}
+<li><a href="{$child.action}" target="main_frame">{$child.label}</a></li>
+{/foreach}
+</ul>{/foreach}
+</div>
+</div>
+
+<script type="text/javascript">
+jQuery(".leftmenu").slide({effect:"leftLoop",trigger:"click",easing:"easeInBack"});
+</script>
+
+<script type="text/javascript">
+ $(".bd a").click(function(){
+		$(".bd a.thiss").removeClass("thiss")
+		$(this).addClass("thiss");
+	}); 
+</script>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+/*广告左右键*/
+.banner .drop-layer ,.adv .drop-layer{ display: none;}      /*20160615*/
+.banner .drop-layer { display: none;}
+.slider-btn { position: absolute; z-index: 5; top: 50%; left: 50%;width: 800px; height: 62px; margin-top: -31px; margin-left: -395px;pointer-events:none; }
+.adv .slider-btn { left: 0; width: 100%; margin-left: 0;}   /*20160615*/
+.slider-btn a{ display: block; width: 28px; height: 62px; font: 400 22px/62px simsun; color: #fff; text-align: center; background: url(../images/btn.png) no-repeat; text-decoration: none;pointer-events:auto;}
+
+
+.floor .floor-r .con img {position: relative; width: 241px; height: 250px;}
+.floor .floor-r .con a { display: block;}
+.floor .floor-r .adv { position: absolute; top: 1px; left: 385px; width: 399px; height: 243px; border-right: 1px solid #ededed; border-bottom: 1px solid #ededed; overflow: hidden;}
+.floor .floor-r .adv ul { position: absolute;}
+/*.floor .floor-r .adv ul li { float: left; width: 483px; height: 250px; overflow: hidden;}*/
+.floor .floor-r .adv ul li, .floor .floor-even .floor-r .con ul li.p-three .adv li { float: left; width: 399px; height: 243px; overflow: hidden;}
+.slider-num{position:absolute;bottom:20px; left:50%;z-index:2;height:15px; text-align: center;}
+.slider-num li,
+.floor .floor-r .adv .slider-num li,
+.floor .floor-even .floor-r .con ul li.p-three .adv .slider-num li { float:left; width:15px;height:15px; margin: 0 5px; background: url(../images/b_icon.png) no-repeat 0 0; border:0}
+.slider-num li.hover,
+.floor .floor-r .adv .slider-num li.hover ,
+.floor .floor-even .floor-r .con ul li.p-three .adv .slider-num li.hover{ background: url(../images/b_icon.png) no-repeat -16px 0; cursor: pointer;}
+.floor 	.floor-r .adv img { width: 399px; height: 243px; border-bottom: 1px solid #ededed; border-right: 1px solid #ededed;}

@@ -1,0 +1,11 @@
+<!--弹出菜单js-->
+<script type="text/javascript" src="themesmobile/swtshop_mobile/js/mobile.js" ></script>
+<div class="goods_nav hid" id="menu">
+        <div class="Triangle">
+          <h2></h2>
+        </div>
+        <ul>
+          <li><a href="#"><span class="menu1"></span><i>我要加盟</i></a></li>
+          <li><a href="#"><span class="menu2"></span><i>我要批发</i></a></li>
+        </ul>
+      </div>

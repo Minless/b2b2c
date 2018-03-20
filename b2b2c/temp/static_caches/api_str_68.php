@@ -1,0 +1,3 @@
+<?php
+$data = 'coming soon...';
+?>

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link href="../../admin/pic/98ecs.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../admin/pic/jquery1.42.min.js"></script>
+<script type="text/javascript" src="../../admin/pic/jquery.SuperSlide.2.1.1.js"></script>
+<title>Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/general.css" rel="stylesheet" type="text/css" />
+</head>
+<body style=" background:url(../../admin/pic/lbg.jpg) left repeat-y;"> 
+<div class="leftmenu">
+<div class="hd">
+<ul>
+<li><img src="../../admin/pic/11_system.png">设置</li>
+<li><img src="../../admin/pic/02_cat_and_goods.png">商品</li>
+<li><img src="../../admin/pic/a11.png">微分销</li>
+<li><img src="../../admin/pic/05_banner.png">广告</li><li><img src="../../admin/pic/12_template.png">模板</li>
+<li><img src="../../admin/pic/a14.png">微信</li><li><img src="../../admin/pic/a15.png">APP</li>
+</ul>
+</div>
+<div class="bd">
+<ul>
+<li class="dropdown"><a href="shop_config.php?act=list_edit" target="main_frame">商店设置</a></li>
+<li class="dropdown"><a href="menu.php?act=list" target="main_frame">自定义菜单</a></li>
+<li class="dropdown"><a href="payment.php?act=list" target="main_frame">支付方式</a></li>
+<li class="dropdown"><a href="website.php?act=list" target="main_frame">授权登录</a></li>
+<li class="dropdown"><a href="captcha_manage.php?act=main" target="main_frame">验证码管理</a></li>
+<li class="dropdown"><a href="shop_config.php?act=mail_settings" target="main_frame">邮件配置</a></li>
+<li class="dropdown"><a href="mail_template.php?act=list" target="main_frame">邮件模板管理</a></li>
+</ul>
+<ul>
+<li class="dropdown"><a href="category.php?act=list" target="main_frame">商品分类</a></li>
+<li class="dropdown"><a href="brand.php?act=list" target="main_frame">商品品牌</a></li>
+</ul>
+<ul>
+<li class="dropdown"><a href="affiliate.php?act=list" target="main_frame">分销比例设置</a></li>
+ <li class="dropdown"><a href="distributor.php?act=list" target="main_frame">分销商列表</a></li>
+ <li class="dropdown"><a href="distrib_goods.php?act=list" target="main_frame">分销商品列表</a></li>
+ <li class="dropdown"><a href="affiliate_ck.php?act=list" target="main_frame">分成订单管理</a></li>
+ <li class="dropdown"><a href="distrib_sort.php?act=list" target="main_frame">分销排行榜</a></li>
+ <li class="dropdown"><a href="deposit_list.php?act=list" target="main_frame">会员提现记录</a></li>
+</ul>
+<ul>
+<li class="dropdown"><a href="ad_position.php?act=list" target="main_frame">广告位置</a></li>
+<li class="dropdown"><a href="ads.php?act=list" target="main_frame">广告列表</a></li>
+</ul>
+<ul>
+<li class="dropdown"><a href="template.php?act=setup" target="main_frame">设置模板</a></li>
+<li class="dropdown"><a href="template.php?act=library" target="main_frame">库项目管理</a></li>
+<li class="dropdown"><a href="edit_languages.php?act=list" target="main_frame">语言项编辑</a></li>
+</ul>
+<ul >
+<li class="dropdown"><a href="weixin.php?act=config" target="main_frame">微信设置</a></li>
+<li class="dropdown"><a href="weixin.php?act=oauth" target="main_frame">OAuth设置</a></li>
+<li class="dropdown"><a href="weixin.php?act=menu" target="main_frame">自定义菜单</a></li>
+<li class="dropdown"><a href="weixin.php?act=addkey" target="main_frame">关键字回复</a></li>
+<li class="dropdown"><a href="weixin.php?act=keywords" target="main_frame">功能变量</a></li>    
+<li class="dropdown"><a href="weixin.php?act=qiandao" target="main_frame">签到设置</a></li>
+<li class="dropdown"><a href="weixin_egg.php?act=list" target="main_frame">活动管理</a></li>
+<li class="dropdown"><a href="weixin_egg.php?act=log" target="main_frame">中奖管理</a></li>
+<li class="dropdown"><a href="weixin.php?act=qcode" target="main_frame">管理二维码</a></li>
+<li class="dropdown"><a href="weixin.php?act=addqcode" target="main_frame">生成二维码</a></li>
+<li class="dropdown"><a href="weixin.php?act=notice" target="main_frame">提醒设置</a></li>
+<li class="dropdown"><a href="weixin.php?act=news" target="main_frame">消息推送</a></li>    
+</ul>
+<ul >
+<li class="dropdown"><a href="app_manage.php?act=basic_setting" target="main_frame">基础设置</a></li>
+<li class="dropdown"><a href="app_push.php?act=setting" target="main_frame">推送设置</a></li>
+<li class="dropdown"><a href="app_push.php?act=push_message" target="main_frame">推送消息</a></li>
+<li class="dropdown"><a href="app_manage.php?act=guide_picture" target="main_frame">引导图片</a></li>
+<li class="dropdown"><a href="app_manage.php?act=menu_setting" target="main_frame">菜单设置</a></li>
+<li class="dropdown"><a href="app_manage.php?act=template_setting" target="main_frame">模板设置</a></li>
+</ul>
+
+</div>
+</div>
+<script type="text/javascript">
+jQuery(".leftmenu").slide({effect:"leftLoop",trigger:"click",easing:"easeInBack"});
+</script>
+
+<script type="text/javascript">
+ $(".bd a").click(function(){
+		$(".bd a.thiss").removeClass("thiss")
+		$(this).addClass("thiss");
+	}); 
+</script>
+ 
+</body>
+</html>

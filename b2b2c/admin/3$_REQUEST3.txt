@@ -1,0 +1,17 @@
+array (
+  'act' => 'step_post',
+  'step' => 'money',
+  'order_id' => '178',
+  'step_act' => 'edit',
+  'discount' => '1',
+  'tax' => '0.00',
+  'shipping_fee' => '15.00',
+  'insure_fee' => '0.00',
+  'surplus' => '0.00',
+  'pay_fee' => '0.00',
+  'integral' => '0',
+  'pack_fee' => '0.00',
+  'bonus_id' => '0',
+  'card_fee' => '0.00',
+  'finish' => '完成',
+)
