@@ -1,9 +1,3 @@
-<?php 
-$k = array (
-  'name' => 'add_url_uid',
-);
-echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
-?>
 <link rel="stylesheet" type="text/css" href="themes/swtshop_buy/css/swtshop_common.css" />
 <script language="javascript"> 
 <!--
@@ -19,7 +13,7 @@ window.onerror = killerrors;
 <?php echo $this->fetch('library/user_header.lbi'); ?>
 <div class="header">
 	<div class="w1210">
-  		<div class="mall-logo"> <a href="./"><img src="themes/swtshop_buy/images/logo.gif" width="190" height="60" /></a> </div>
+  		<div class="mall-logo"> <a href="./"><img src="themes/swtshop_buy/images/logo.gif" width="250" /></a> </div>
   		<div class="mall-logo-right"> <a href="#" target="_blank"></a> </div>
   		<div class="mall-search">
     <div id="search-tips" style="display:none;"></div>
@@ -54,9 +48,8 @@ if ($this->_foreach['name']['total'] > 0):
 <div class="all-nav all-nav-border">
   <div class="w1210">
       <div class="home-category fl"  onmouseover="_show_(this)" onmouseout="_hide_(this)"> 
-        <i class="icon"></i>
         <a href="catalog.php" class="menu-event main-bg-color" title="查看全部商品分类">全部商品分类<i></i></a> 
-        <div class="expand-menu all-cat main-bg-color" style="top:0px;"> 
+        <div class="expand-menu all-cat main-bg-color"> 
         <?php $_from = get_categories_tree(0); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'cat');$this->_foreach['cat0'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['cat0']['total'] > 0):
     foreach ($_from AS $this->_var['cat']):

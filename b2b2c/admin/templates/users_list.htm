@@ -66,14 +66,24 @@
 					<span style="border: 1px #6DD26A solid; background-color: #6DD26A; padding: 1px 2px 0px 2px; color: white; display: inline; border-radius: 2px;">
 						<!-- {if $user.froms == 'pc'} -->
 						PC会员
+
 						<!-- {elseif $user.froms == 'mobile'} -->
 						微商城会员
 						<!-- {elseif $user.froms == 'app'} -->
 						APP会员
+						
 						<!-- {/if} -->
 					</span>
+
 					<!-- {if $user.rank_name != null} -->
 					<span style="margin-left: 5px; border: 1px #FBB24E solid; background-color: #FBB24E; padding: 1px 2px 0px 2px; color: white; display: inline; border-radius: 2px;"> {$user.rank_name} </span>
+					<!-- {/if} -->
+					<!-- {if $user.talent == '1'} -->
+					<span style="margin-left: 5px;border: 1px #DD4C40 solid; background-color: #DD4C40; padding: 1px 2px 0px 2px; color: white; display: inline; border-radius: 2px;">
+						
+						网站达人
+						
+					</span>
 					<!-- {/if} -->
 				</td>
 				<td>

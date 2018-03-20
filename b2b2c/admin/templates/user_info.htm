@@ -157,6 +157,17 @@
         </select>
     </td>
   </tr>
+    <tr>
+    <td class="label">达人状态:</td>
+    <td>
+      <select name="talent">
+          <option value="0" {if $user.talent eq 0} selected="selected"{/if}>请选择审核状态</option>
+            <option value="1" {if $user.talent eq 1} selected="selected"{/if}>申请通过</option>
+            <option value="2" {if $user.talent eq 2} selected="selected"{/if}>申请中</option>
+            <option value="3" {if $user.talent eq 3} selected="selected"{/if}>申请不通过</option> 
+        </select>
+    </td>
+  </tr>
   <!-- #代码增加2014-12-23 by www.98ecshop.com  _end -->
   {if $user.parent_id}
   <tr>

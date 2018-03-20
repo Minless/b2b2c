@@ -9,12 +9,12 @@ $data = array (
     ),
     1 => 
     array (
-      'goods_id' => '264',
+      'goods_id' => '291',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '291',
+      'goods_id' => '264',
       'sort_order' => '100',
     ),
     3 => 
@@ -517,17 +517,17 @@ $data = array (
     ),
     13 => 
     array (
-      'goods_id' => '264',
+      'goods_id' => '291',
       'sort_order' => '100',
     ),
     14 => 
     array (
-      'goods_id' => '272',
+      'goods_id' => '264',
       'sort_order' => '100',
     ),
     15 => 
     array (
-      'goods_id' => '291',
+      'goods_id' => '272',
       'sort_order' => '100',
     ),
     16 => 
@@ -1510,17 +1510,17 @@ $data = array (
     ),
     2 => 
     array (
-      'goods_id' => '264',
+      'goods_id' => '291',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '272',
+      'goods_id' => '264',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '291',
+      'goods_id' => '272',
       'sort_order' => '100',
     ),
     5 => 
@@ -1948,14 +1948,11 @@ $data = array (
     144 => 'CK',
     145 => '碧欧泉',
     146 => '珀莱雅',
-    149 => '雅诗兰黛',
     150 => '合生元',
     154 => '资生堂',
     148 => '美赞臣',
     77 => '资生堂',
     73 => '资生堂',
-    98 => '雅诗兰黛',
-    108 => '雅诗兰黛',
     132 => '相宜本草',
     133 => '相宜本草',
     84 => '资生堂',

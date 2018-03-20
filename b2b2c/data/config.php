@@ -1,6 +1,6 @@
 <?php
 // database host
-$db_host   = "127.0.0.1:3306";
+$db_host   = "192.168.0.220:3306";
 
 // database name
 $db_name   = "b2b2c";
@@ -33,6 +33,6 @@ define('AUTH_KEY', 'this is a key');
 
 define('OLD_AUTH_KEY', '');
 
-define('API_TIME', '2018-03-20 02:55:19');
+define('API_TIME', '2018-03-20 08:07:40');
 
 ?>

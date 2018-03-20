@@ -130,7 +130,6 @@ function get_user_info($id=0)
     $user['user_points'] = $user['pay_points'] . $GLOBALS['_CFG']['integral_name'];
     $user['user_money']  = price_format($user['user_money'], false);
     $user['user_bonus']  = price_format($bonus['bonus_value'], false);
-
     return $user;
 }
 /**
